@@ -1,0 +1,12 @@
+<div class="component-container">
+    <h3>Vango Admin Application</h3>
+    <div *ngIf="user$ | async; let user; else notLoggedIn">
+        Welcome {{ user.FirstName }} {{ user.LastName }}. Use the menu on the left to navigate.
+    </div>
+    <ng-template #notLoggedIn>
+        <div>
+            Please Login to continue.
+            <a mat-raised-button routerLink="/login" color="primary">Login</a>
+        </div>            
+    </ng-template>
+</div>

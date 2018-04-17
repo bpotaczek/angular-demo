@@ -1,0 +1,18 @@
+<div class="page-container">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Login</mat-card-title>
+        </mat-card-header>
+        <div fxLayout="column" fxLayoutAlign="start">
+            <mat-form-field class="form-width-300" floatLabel="always">
+                <input matInput placeholder="Username" [(ngModel)]="username">
+            </mat-form-field>
+            <mat-form-field class="form-width-300" floatLabel="always">
+                <input matInput placeholder="Password" type="password" [(ngModel)]="password">
+            </mat-form-field>
+            <div fxLayout="row" fxLayoutAlign="start">
+                <button fxFlex="0 0 120px" mat-raised-button color="primary" (click)="login()">Login</button>
+            </div>
+        </div>
+    </mat-card>
+</div>

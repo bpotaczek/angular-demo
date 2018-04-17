@@ -1,0 +1,39 @@
+.container {
+    position: absolute;
+    top: 65px;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+}
+
+.sidenav {
+    display: flex;
+    align-items: left;
+    justify-content: top;
+    width: 200px;
+    padding-left: 10px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0
+}
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+
+.mat-toolbar-row {
+    padding: 0;
+
+    & > div {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}

@@ -1,0 +1,22 @@
+<div class="page-container">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Person Details</mat-card-title>
+      </mat-card-header>
+      <form>
+        <div fxLayout="row" fxLayoutAlign="space-between center">
+          <mat-form-field class="form-width-300" floatLabel="always">
+            <input matInput type="text" placeholder="Id" readonly [(ngModel)]="person.id" id="id" name="id">
+          </mat-form-field>
+          <mat-form-field class="form-width-300" floatLabel="always">
+            <input matInput type="text" placeholder="First Name" [(ngModel)]="person.firstName" id="firstName" name="firstName">
+          </mat-form-field>
+          <mat-form-field class="form-width-300" floatLabel="always">
+              <input matInput type="text" placeholder="Last Name" [(ngModel)]="person.lastName" id="lastName" name="lastName">
+            </mat-form-field>
+        </div>
+    </form>
+      <button mat-raised-button (click)="update()" color="primary">Update</button>
+    </mat-card>
+  </div>
+  {{ person | json }}

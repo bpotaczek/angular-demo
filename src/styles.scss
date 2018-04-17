@@ -1,0 +1,68 @@
+/* You can add global styles to this file, and also import other style files */
+/* @import '~@angular/material/prebuilt-themes/purple-green.css'; */
+/* @import '~@angular/material/prebuilt-themes/deeppurple-amber.css'; */
+@import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
+/* @import '~@angular/material/prebuilt-themes/indigo-pink.css'; */
+
+body {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.page-container {
+    margin: 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.component-container, .page-container {
+    & > .mat-card {
+        margin-bottom: 20px;
+        padding-top: 16px;
+        padding-left: 0;
+        padding-right: 0;
+        
+        & > .mat-card-header {
+            padding-left: 16px;
+            padding-right: 16px;
+            margin: 0;
+            border-bottom-color: rgba(255, 255, 255, 0.5);
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+        }
+
+        & > div {
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+
+        & > .mat-table {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+}
+
+.mat-form-field {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.mat-nav-list {
+    & > .mat-subheader {
+        padding-left: 8px;
+    }
+
+    & > a.mat-list-item {
+        height: auto;
+        
+        & > .mat-list-item-content {
+            font-size: 10pt;
+            height: 32px;
+        }
+    }
+}
+

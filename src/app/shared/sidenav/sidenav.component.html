@@ -1,0 +1,15 @@
+<mat-nav-list>
+  <h3 mat-subheader>Main</h3>
+  <a mat-list-item routerLink="/home" routerLinkActive="active">Home</a>
+  <div *ngIf="user; then loggedIn; else loggedOut"></div>
+</mat-nav-list>
+
+<ng-template #loggedIn>
+  <a mat-list-item (click)="logout()">Logout</a>
+  <h3 mat-subheader>People</h3>
+  <a mat-list-item routerLink="/person/list" routerLinkActive="active">Person List</a>
+</ng-template>
+<ng-template #loggedOut>
+  <a mat-list-item routerLink="/login" routerLinkActive="active">Login</a>
+</ng-template>
+

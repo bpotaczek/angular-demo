@@ -1,0 +1,5 @@
+<div class="page-container">
+    <div *ngFor="let person of people">
+            <a [routerLink]="['/person/detail', person.id]" color="primary">{{person.firstName}} {{person.lastName}}</a>
+    </div>
+</div>

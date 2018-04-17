@@ -1,0 +1,35 @@
+<div class="page-container">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>People</mat-card-title>
+        </mat-card-header>
+        <mat-table [dataSource]="peopleDataSource" matSort>
+            <ng-container matColumnDef="Id">
+                <mat-header-cell fxFlex="0 0 200px" *matHeaderCellDef mat-sort-header>Id</mat-header-cell>
+                <mat-cell fxFlex="0 0 200px" *matCellDef="let person">{{ person.id }}</mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="FirstName">
+                <mat-header-cell fxFlex="1 1 auto" *matHeaderCellDef mat-sort-header>First Name</mat-header-cell>
+                <mat-cell fxFlex="1 1 auto" *matCellDef="let person">{{ person.firstName }}</mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="LastName">
+                <mat-header-cell fxFlex="1 1 auto" *matHeaderCellDef mat-sort-header>Last Name</mat-header-cell>
+                <mat-cell fxFlex="1 1 auto" *matCellDef="let person">{{ person.lastName }}</mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="Button">
+                <mat-header-cell fxFlex="0 0 100px" *matHeaderCellDef></mat-header-cell>
+                <mat-cell fxFlex="0 0 100px" *matCellDef="let person">
+                    <div class="button-row">
+                        <a mat-raised-button [routerLink]="['/person/detail', person.id]" color="primary">View</a>
+                    </div>
+                </mat-cell>
+            </ng-container>
+            <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+            <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+        </mat-table>
+        <div>
+            <mat-paginator #paginator [pageSize]="10" [pageSizeOptions]="[10, 25, 100]">
+            </mat-paginator>
+        </div>
+    </mat-card>
+</div>
