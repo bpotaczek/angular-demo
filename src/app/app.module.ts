@@ -12,6 +12,7 @@ import { AppComponent } from './app.component';
 
 // routing
 import { AppRoutingModule } from './app.routing.module';
+import { PetModule } from './pet/pet.module';
 
 // services and guards
 
@@ -24,9 +25,10 @@ import { AppRoutingModule } from './app.routing.module';
     BrowserModule,
     BrowserAnimationsModule,
 
-    // Vango Modules
+    // Custom Modules
     CoreModule,
     SharedModule,
+    PetModule,
 
     // routing modules
     AppRoutingModule,

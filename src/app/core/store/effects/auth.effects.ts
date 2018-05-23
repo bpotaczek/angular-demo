@@ -48,11 +48,11 @@ export class AuthEffects {
         })
     );
 
-    @Effect()
-    $auth: Observable<Action> = this.actions$.pipe(
-        ofType(AuthActionTypes.Login_TokenSet),
-        map((action: AuthTokenSetAction) => new NavigationGoAction({ path: ['']}))
-    );
+    // @Effect()
+    // $auth: Observable<Action> = this.actions$.pipe(
+    //     ofType(AuthActionTypes.Login_TokenSet),
+    //     map((action: AuthTokenSetAction) => new NavigationGoAction({ path: ['']}))
+    // );
 
     @Effect()
     $startup: Observable<Action> = defer(() => {

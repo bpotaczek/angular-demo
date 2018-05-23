@@ -19,6 +19,11 @@ const routes: Routes = [
         canLoad: [AuthGuard]
     },
     {
+        path: 'pets',
+        loadChildren: 'app/pet/pet.module#PetModule',
+        canLoad: [AuthGuard]
+    },
+    {
         path: '',
         redirectTo: 'home',
         pathMatch: 'full'

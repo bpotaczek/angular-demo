@@ -5,6 +5,7 @@ import { PersonComponent } from './person.component';
 import { PersonListContainerComponent } from './person-list-container';
 import { PersonSelectedComponent } from './person-selected';
 import { AuthGuard } from '../shared/guards';
+import { PersonTestContainerComponent } from './person-test-container/person-test-container';
 
 const routes: Routes = [
     {
@@ -12,8 +13,9 @@ const routes: Routes = [
         component: PersonComponent,
         canActivate: [AuthGuard],
         children: [
-            { path: 'list', component: PersonListContainerComponent },
-            { path: 'detail/:id', component: PersonSelectedComponent }
+            { path: 'list', component: PersonListContainerComponent, data: { foo: 'bar' } },
+            { path: 'detail/:id', component: PersonSelectedComponent },
+            { path: 'test', component: PersonTestContainerComponent }
         ]
     },
 ];

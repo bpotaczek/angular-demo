@@ -12,7 +12,8 @@ import { PersonListComponent } from './person-list';
 import { PersonSelectedComponent } from './person-selected';
 import { PersonTableComponent } from './person-table';
 import { PersonListContainerComponent } from './person-list-container';
-
+import { PersonTestContainerComponent } from './person-test-container/person-test-container';
+import { PersonHelloComponent } from './person-hello/person-hello.component';
 
 @NgModule({
   imports: [
@@ -27,7 +28,9 @@ import { PersonListContainerComponent } from './person-list-container';
     PersonListContainerComponent,
     PersonListComponent,
     PersonTableComponent,
-    PersonSelectedComponent
+    PersonSelectedComponent,
+    PersonTestContainerComponent,
+    PersonHelloComponent
   ],
   providers: []
 })
