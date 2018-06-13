@@ -3,7 +3,7 @@ import { AuthService } from '../../core/services';
 import { Store, select } from '@ngrx/store';
 
 import * as fromCore from '../../core/store';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 import { User } from '../../core/models';
 
 @Component({

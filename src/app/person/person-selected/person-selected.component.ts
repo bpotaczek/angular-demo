@@ -4,7 +4,7 @@ import { PersonState, PersonSelectedAction, getPersonSelectedEntity, PersonUpdat
 import { ActivatedRoute } from '@angular/router';
 import { map, take } from 'rxjs/operators';
 import { Person } from '../../core/models';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-person-selected',

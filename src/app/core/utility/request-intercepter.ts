@@ -1,7 +1,7 @@
 import { HttpInterceptor } from '@angular/common/http/src/interceptor';
 import { HttpRequest } from '@angular/common/http/src/request';
 import { HttpHandler, HttpHeaders, HttpEvent } from '@angular/common/http';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 import { Store } from '@ngrx/store';
 
 import * as fromRoot from '../../core/store';
