@@ -24,7 +24,7 @@ import {
   MatCardModule
 } from '@angular/material';
 
-import { SidenavComponent } from './sidenav/sidenav.component';
+import { SidenavComponent } from 'shared-components';
 import { LoginComponent } from './login';
 import { HomeComponent } from './home';
 // import { BatchDisableReprocessPipe } from './pipes/disable-batch-reprocess.pipe';

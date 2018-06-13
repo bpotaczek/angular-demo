@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Output, Input, OnChanges } from '@angular/core';
-import { Person } from '../../core/models';
+import { Person } from 'shared-components';
 
 @Component({
   selector: 'app-person-detail',

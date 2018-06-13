@@ -1,6 +1,6 @@
 import { Action } from '@ngrx/store';
 import { PersonActionTypes, PersonActions } from '../actions';
-import { Person } from '../../../core/models';
+import { Person } from 'shared-components';
 
 export interface State {
     loaded: boolean;

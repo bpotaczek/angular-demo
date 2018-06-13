@@ -3,7 +3,7 @@ import { Store, select } from '@ngrx/store';
 import { PersonState, PersonSelectedAction, getPersonSelectedEntity, PersonUpdateAction } from '../store';
 import { ActivatedRoute } from '@angular/router';
 import { map, take } from 'rxjs/operators';
-import { Person } from '../../core/models';
+import { Person } from 'shared-components';
 import { Observable } from 'rxjs';
 
 @Component({

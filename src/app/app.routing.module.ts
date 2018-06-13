@@ -15,7 +15,7 @@ const routes: Routes = [
     },
     {
         path: 'person',
-        loadChildren: 'app/person/person.module#PersonModule',
+        loadChildren: 'src/app/person/person.module#PersonModule',
         canLoad: [AuthGuard]
     },
     {

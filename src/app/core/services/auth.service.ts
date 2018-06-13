@@ -2,8 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 
 import { environment } from '../../../environments/environment';
-import { AuthToken } from '../../core/models';
-import { User } from '../../core/models/user';
+import { AuthToken, User } from 'shared-components';
 import { Observable, of } from 'rxjs';
 
 @Injectable()

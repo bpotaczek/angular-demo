@@ -1,7 +1,7 @@
 import { Action } from '@ngrx/store';
-import { User } from '../../models/user';
+import { User } from 'shared-components';
 import { AuthActions, AuthActionTypes } from '../actions';
-import { AuthToken } from '../../models';
+import { AuthToken } from 'shared-components';
 
 export interface State {
     loggedin: boolean;

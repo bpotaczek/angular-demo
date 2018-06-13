@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 
 import { getUser, CoreState, AuthLogoutAction } from './core/store';
 
-import { User } from './core/models';
+import { User } from 'shared-components';
 
 @Component({
   selector: 'app-root',

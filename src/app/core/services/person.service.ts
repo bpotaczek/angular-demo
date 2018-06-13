@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { environment } from '../../../environments/environment';
 import { mapResult } from '../../shared/operators';
-import { Person } from '../models';
+import { Person } from 'shared-components';
 
 @Injectable()
 export class PersonService {

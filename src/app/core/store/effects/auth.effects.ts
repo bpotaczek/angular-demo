@@ -13,7 +13,7 @@ import {
     AuthTokenSetAction,
     NavigationGoAction
 } from '../actions';
-import { AuthToken, User, Login } from '../../models';
+import { AuthToken, User, Login } from 'shared-components';
 import { tap, map, switchMap, catchError } from 'rxjs/operators';
 
 @Injectable()

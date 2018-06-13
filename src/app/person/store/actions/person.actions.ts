@@ -1,5 +1,5 @@
 import { Action } from '@ngrx/store';
-import { Person } from '../../../core/models';
+import { Person } from 'shared-components';
 
 export enum PersonActionTypes {
     Load = '[Person] LOAD',

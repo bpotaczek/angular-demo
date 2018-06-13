@@ -1,5 +1,5 @@
 import { Component, OnChanges, Input, ViewChild } from '@angular/core';
-import { Person } from '../../core/models';
+import { Person } from 'shared-components';
 import { MatTableDataSource, MatPaginator, MatSort } from '@angular/material';
 
 @Component({

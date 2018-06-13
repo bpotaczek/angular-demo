@@ -2,7 +2,7 @@ import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Store } from '@ngrx/store';
 
-import { Person } from '../../core/models';
+import { Person } from 'shared-components';
 import { PersonState, getPersonEntities } from '../store';
 
 @Component({

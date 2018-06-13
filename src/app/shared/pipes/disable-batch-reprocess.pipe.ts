@@ -1,5 +1,5 @@
 // import { Pipe, PipeTransform } from '@angular/core';
-// import { Batch } from '../../core/models';
+// import { Batch } from 'shared-components';
 
 // @Pipe({name: 'disablebatchreprocess'})
 // export class BatchDisableReprocessPipe implements PipeTransform {

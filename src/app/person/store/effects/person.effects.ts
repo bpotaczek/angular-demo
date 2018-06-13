@@ -17,7 +17,7 @@ import {
 } from '../actions';
 
 import { PersonService } from '../../../core/services';
-import { Person } from '../../../core/models';
+import { Person } from 'shared-components';
 import { NavigationGoAction } from '../../../core/store';
 
 @Injectable()

@@ -4,7 +4,7 @@ import { Store, select } from '@ngrx/store';
 
 import * as fromCore from '../../core/store';
 import { Observable } from 'rxjs';
-import { User } from '../../core/models';
+import { User } from 'shared-components';
 
 @Component({
   selector: 'app-home',
